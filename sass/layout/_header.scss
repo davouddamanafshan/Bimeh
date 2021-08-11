@@ -1,0 +1,256 @@
+.header {
+    background-image: url(../img/bimeh/625918.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 100vh;
+    .logo-main {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: opacityRev 3s 3s;
+        animation-fill-mode: both;
+    }
+    &__top {
+        animation-name: moveInBottom;
+        animation-delay: 4s;
+        animation-duration: 1s;
+        animation-fill-mode: backwards;
+        background-color: rgb(241, 241, 241);
+        width: 100%;
+        height: 7rem;
+        font-size: $font;
+        font-weight: $weight;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-profile {
+            @include flex;
+            cursor: pointer;
+            padding: 2rem;
+            &:hover {
+                background-image: linear-gradient(to right, rgb(235, 232, 55), rgb(194, 191, 13));
+                ;
+                color: #fff;
+                border-radius: 1rem;
+                padding: .5rem 2rem;
+            }
+            &-person {
+                margin-left: 1rem;
+                width: 1.75rem;
+            }
+        }
+        &-navbar {
+            display: flex;
+            align-items: center;
+            ul {
+                display: flex;
+                list-style: none;
+                .mar1,
+                .mar2,
+                .mar3,
+                .mar4 {
+                    margin-right: 5rem;
+                    cursor: pointer;
+                }
+                .mar2,
+                .mar4 {
+                    padding: .5rem 4rem;
+                    &:hover {
+                        background-color: $color-blue;
+                        color: #fff;
+                        border-radius: 1rem;
+                    }
+                }
+                .mar1,
+                .mar3 {
+                    padding: .5rem 1.5rem;
+                    &:hover {
+                        background-color: $color-blue;
+                        color: #fff;
+                        border-radius: 1rem;
+                    }
+                }
+                .high {
+                    padding: .5rem 1.5rem;
+                    a {
+                        color: black;
+                    }
+                    &:hover {
+                        background-color: $color-blue;
+                        color: #fff;
+                        border-radius: 1rem;
+                        border-radius: 1rem 1rem 0 0;
+                        box-shadow: 0 .2rem .3rem rgb(235, 232, 55);
+                    }
+                }
+            }
+        }
+        &-logo {
+            @include flex;
+            font-size: 3rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: rgb(59, 119, 231);
+            &-home {
+                width: 5rem;
+                animation: moveInLeft 3s 4s;
+            }
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        .call__us {
+            animation: opacity 2s 5s;
+            animation-fill-mode: both;
+            position: relative;
+            z-index: 4;
+            .btn,
+            .btn:link,
+            .btn:visited {
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                transition: all .2s;
+                // position: relative;
+                font-size: 1.6rem;
+                cursor: pointer;
+                color: #fff;
+            }
+            .btn:hover {
+                transform: translateY(-0.3rem);
+            }
+            .btn:hover::after {
+                transform: scaleX(1.5) scaleY(1.5);
+                opacity: 0;
+                background-color: $color-blue;
+            }
+            .btn:active,
+            .btn:focus {
+                outline: none;
+                transform: translateY(-0.1rem);
+            }
+            .btn::after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                border-radius: 10rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+            }
+            .btn--white {
+                background-color: #fff;
+                color: #777;
+            }
+            .btn--white::after {
+                background-color: #fff;
+            }
+            .btn--animated {
+                animation: moveInBottom .5s ease-out .75s;
+                animation-fill-mode: backwards;
+            }
+            &-first,
+            &-second {
+                cursor: pointer;
+                position: fixed;
+                @include flexbox;
+                padding: 2rem;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 3px dashed $color-blue;
+                border-radius: 70px;
+                p {
+                    font-size: $font;
+                    font-weight: $weight;
+                }
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+            &-first {
+                padding: 2rem 3.5rem;
+                margin: 40rem 0 0 -8rem;
+            }
+            &-second {
+                margin: 40rem 0 0 -5rem;
+            }
+        }
+        &__main {
+            font-size: $font;
+            font-weight: $weight;
+            // margin: 0 auto;
+            margin-top: 10rem;
+            width: 80rem;
+            height: 35rem;
+            border-bottom-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            animation: opacity 2s 5s;
+            animation-fill-mode: both;
+            &-ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                &-first,
+                &-second {
+                    display: flex;
+                    list-style: none;
+                    li {
+                        overflow: hidden;
+                        border-right: .1rem solid $color-blue;
+                        figure {
+                            cursor: pointer;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 20rem;
+                            height: 17.5rem;
+                            background-color: rgba(255, 255, 255, 0.849);
+                            transition: transform .5s;
+                            &:hover {
+                                transform: scale(1.3);
+                                background-color: #fff;
+                                color: $color-blue;
+                            }
+                        }
+                    }
+                }
+                &-first {
+                    border-bottom: .1rem solid $color-blue;
+                }
+                img {
+                    padding-bottom: 10px;
+                }
+                .item5 {
+                    border-bottom-left-radius: 3rem;
+                }
+                .item8 {
+                    border-bottom-right-radius: 3rem;
+                }
+                .item4,
+                .item8 {
+                    border-right: none;
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 80.3rem;
+                height: 5rem;
+                top: 12rem;
+                background-color: $color-blue;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+        }
+    }
+}
