@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Vazir", sans-serif;
+  font-family: "Vazir", sans-serif !important;
   font-weight: 300; }
 
 .row {
@@ -469,14 +469,10 @@ body {
       margin-top: .7rem; }
       .main__content .lvl1 p:first-child {
         font-size: 3.5rem;
+        margin-bottom: 1rem;
         font-weight: 700;
         color: #3b77e7; }
-      .main__content .lvl1 p:nth-child(2) {
-        margin-top: -1rem;
-        font-size: 2.5rem;
-        color: #5993ff; }
       .main__content .lvl1 p:last-child {
-        margin-top: -1rem;
         font-size: 2.5rem;
         color: #5993ff; }
     .main__content .lvl2 {
@@ -770,12 +766,12 @@ body {
       align-items: center;
       background-color: #f8f8f8;
       border-radius: 50%;
-      margin: 11rem 8rem 7rem;
+      margin: 11rem 7rem 7rem;
       padding: 2.5rem 8rem;
       border-radius: 3rem; }
       .main__content .lvl5 p {
         margin-bottom: 3rem;
-        font-size: 1.3rem; }
+        font-size: 1.2rem; }
       .main__content .lvl5 button {
         width: 12rem;
         height: 3rem;

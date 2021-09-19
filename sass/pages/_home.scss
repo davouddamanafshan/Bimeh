@@ -34,16 +34,11 @@
             margin-top: .7rem;
             p:first-child {
                 font-size: 3.5rem;
+                margin-bottom: 1rem;
                 font-weight: 700;
                 color: $color-blue;
             }
-            p:nth-child(2) {
-                margin-top: -1rem;
-                font-size: 2.5rem;
-                color: rgb(89, 147, 255);
-            }
             p:last-child {
-                margin-top: -1rem;
                 font-size: 2.5rem;
                 color: rgb(89, 147, 255);
             }
@@ -371,12 +366,12 @@
             @include flexbox;
             background-color: rgb(248, 248, 248);
             border-radius: 50%;
-            margin: 11rem 8rem 7rem;
+            margin: 11rem 7rem 7rem;
             padding: 2.5rem 8rem;
             border-radius: 3rem;
             p {
                 margin-bottom: 3rem;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
             button {
                 width: 12rem;
