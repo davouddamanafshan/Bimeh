@@ -192,7 +192,7 @@ body {
       cursor: pointer;
       padding: 2rem; }
       .header__top-profile:hover {
-        background-image: linear-gradient(to right, #ebe837, #c2bf0d);
+        background-color: #3b77e7;
         color: #fff;
         border-radius: 1rem;
         padding: .5rem 2rem; }

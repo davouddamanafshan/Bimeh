@@ -32,7 +32,7 @@
             cursor: pointer;
             padding: 2rem;
             &:hover {
-                background-image: linear-gradient(to right, rgb(235, 232, 55), rgb(194, 191, 13));
+                background-color: $color-blue;
                 ;
                 color: #fff;
                 border-radius: 1rem;
